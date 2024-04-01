@@ -1,17 +1,7 @@
-## Overview
-This project implements the deep learning model proposed by Liu et al. for diagnosing arrhythmia using ECG signals, as detailed in their research paper. 
-Arrhythmia, a heart condition characterized by abnormal electrical impulses, can significantly hinder blood circulation, potentially leading to heart attacks or strokes. 
-Traditional arrhythmia detection methods rely on pre-processed, denoised ECG signals, which may not preserve crucial signal features. 
-This project leverages the power of deep learning, specifically the attention mechanism, to process raw ECG signals directly, 
-potentially improving diagnostic accuracy by focusing on the most relevant signal parts.
+Validating "Attention-based CNN" for classification of ECG data
 
-## Model Description
-The core of our implementation is the attention-based deep learning model. 
-The attention mechanism within the model assigns weights to different slices of an ECG signal based on their importance, 
-hypothesizing that significant peaks in the ECG signal, indicative of potential arrhythmias, will be weighted more heavily than noisy segments. 
-This allows the convolutional neural network (CNN) to focus on the most informative parts of the ECG signal for diagnosis.
+In this project, we have implemented the deep learning model proposed by Liu et al. in their paper for arrhythmia diagnosis using ECG signals. Arrhythmia is a heart condition which causes abnormal electrical impulses in the heart. Such irregularities cause improper blood circulation to the organs all over the body and could lead to heart attacks or strokes.
 
-## Dataset
-The ECG data used to validate our model comes from the MIT-BIH Arrhythmia Database available on the MIT-BIH website. 
-This dataset is widely used for benchmarking algorithms in the field of arrhythmia detection and consists of various annotated ECG signals representative of 
-different heart conditions.
+ECG signals are used to detect arrhythmia, however, the traditional detection techniques require a pre-processed, denoised signal. The methods applied for pre-processing are complex and the resulting signals might not preserve all the important features of the signals. By the advent of deep learning, particularly, the attention layer, the authors have proposed that the detection could be performed using raw ECG signals. The attention layer assigns weight to each slice of the signal, based on its importance. They hypothesise that the peaks would have a higher weight than their noisy counterparts; thus, the CNN could process the weighted information accordingly.
+
+In this notebook, we have validated the model using ECG data from the MIT-BIH website.
